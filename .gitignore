@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+todo/todoapp/migrations
+
+.idea/inspectionProfiles/profiles_settings.xml
