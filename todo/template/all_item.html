@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo</title>
+</head>
+<body>
+<header><h2> To Do list </h2></header>
+    <div>
+
+
+             {% for i in item %}
+             <tr>
+                        <th>
+                            <ul>
+                                <li>
+                                    <a href="/{{i.id}}"> {{i.name}} </a>
+                                </li>
+                            </ul>
+                        </th>
+             </tr>
+             {% endfor %}
+
+        <br>
+        <br>
+        <a href="/create/">  Create todo item  </a>
+    </div>
+</body>
+</html>
