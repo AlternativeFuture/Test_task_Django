@@ -130,4 +130,5 @@ dmypy.json
 
 todo/todoapp/migrations
 
-.idea/inspectionProfiles/profiles_settings.xml
+.idea/
+
