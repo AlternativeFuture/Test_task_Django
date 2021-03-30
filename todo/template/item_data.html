@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <title>ToDo</title>
 </head>
-<body>
+    <body>
 
         <h2> Name: {{ item.name }}</h2>
-        <h3> description: {{ item.description }}</h3>
+        <h3> Description: {{ item.description }}</h3>
+        <h3> Publish date: {{item.pub_date}} </h3>
+        <h3> Completed: {{item.completed}} </h3>
 
-        <a href="/del_item/{{item.id}}" >Delete item</a>
+        <a href="{% url 'update item' item.id %}"> Update item</a>
+        <br>
+        <a href="{% url 'delete item' item.id %}" >Delete item</a>
 
-</body>
+    </body>
 </html>
